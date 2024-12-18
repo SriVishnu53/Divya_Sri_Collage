@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Divya Sri College Of Arts & Science - Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cinzel', serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-image: url('images/bg.png'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            background-position: center;
+        }
+
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between; /* Ensures logo and name on the left, navigation on the right */
+            align-items: center;
+        }
+
+        /* Logo and Name container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the logo */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-right: 10px; /* Adds space between logo and name */
+        }
+
+        /* Styling for the name "Vishnu" */
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Navigation styling */
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em; /* Increased font size for navigation links */
+        }
+
+        header nav ul li {
+            display: inline-block; /* Makes the boxes around the links */
+        }
+
+        header nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px; /* Adds padding inside the box */
+            background-color: #fff; /* White box around the text */
+            border-radius: 5px; /* Rounds the corners of the box */
+            font-size: 1.0em; /* Adjusted size of navigation text */
+            display: inline-block; 
+            /* Ensures the box only surrounds the text */
+        }
+
+        /* Hover effect for navigation links */
+        header nav ul li a:hover {
+            background-color: #f2f2f2;
+            text-decoration: underline;/* Changes box color when hovering */
+        }
+
+        .course-section {
+            padding: 2em 1em;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            background-image: url('images/bg.png'); /* New image for course sections */
+            background-size: cover;
+            background-position: center;
+        }
+
+        .course-section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .course-section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        .course-section h2 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 0.5em;
+        }
+
+        .course-section p {
+            font-size: 1.1em;
+            color: #333;
+            margin-bottom: 1em;
+        }
+
+        .course-image {
+            width: 300px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 1em;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 0.05em 0; /* Further reduced padding */
+            margin-top: 0; /* Removed margin */
+            font-size: 0.8em; /* Smaller font size for compactness */
+            line-height: 0.5; /* Tighter line spacing */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo-container">
+        <img src="images/logo.jpg" alt="College Logo" class="logo"><!-- Logo -->
+        <span class="name">Divya Sri College Of Arts & Science</span> <!-- Name added after the logo -->
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Back</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="course-section">
+    <h2>BA (Tamil)</h2>
+    <p>
+        The BA Tamil program offers a deep dive into Tamil literature, history, and culture. It provides a foundation for careers in teaching, research, and creative writing.
+    </p>
+    <img src="images/tamil.jpg" alt="BA Tamil" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>BA (English)</h2>
+    <p>
+        BA English focuses on enhancing linguistic proficiency and analytical skills through the study of English literature, language, and communication. Graduates excel in media, teaching, and public relations.
+    </p>
+    <img src="images/english.jpg" alt="BA English" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>BA (Maths)</h2>
+    <p>
+        The BA Mathematics program combines theoretical concepts and practical applications, preparing students for careers in teaching, data analysis, and mathematical research.
+    </p>
+    <img src="images/maths.jpg" alt="BA Maths" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>B.Com</h2>
+    <p>
+        B.Com offers in-depth knowledge of finance, accounting, and business management. It paves the way for careers in banking, auditing, and entrepreneurship.
+    </p>
+    <img src="images/bcom.jpg" alt="B.Com" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>B.Com (CA)</h2>
+    <p>
+        B.Com (Computer Applications) integrates commerce with IT skills, enabling students to excel in areas like e-commerce, digital marketing, and software development.
+    </p>
+    <img src="images/bcom ca.jpg" alt="B.Com CA" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>BCA (Computer Application)</h2>
+    <p>
+        The BCA program equips students with essential knowledge in programming, database management, and software development, preparing them for careers in IT and software engineering.
+    </p>
+    <img src="images/bca.jpg" alt="BCA" class="course-image">
+</section>
+
+<section class="course-section">
+    <h2>B.Sc (Computer Science)</h2>
+    <p>
+        The B.Sc Computer Science program focuses on advanced computing, algorithms, and system design, opening opportunities in AI, machine learning, and software development.
+    </p>
+    <img src="images/bsc.jpg" alt="B.Sc Computer Science" class="course-image">
+</section>
+
+<footer>
+    <p>&copy; 2024 Divya Sri College Of Arts & Science. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

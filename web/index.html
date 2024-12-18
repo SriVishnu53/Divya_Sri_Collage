@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Divya Sri College Of Arts & Science</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic styling for the body */
+        body {
+            font-family: 'Cinzel', serif; /* Applied Cinzel font style to all text */
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bg.png'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+           /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            background-position: center;
+        }
+
+        /* Main Header styling */
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between; /* Ensures logo and name on the left, navigation on the right */
+            align-items: center;
+        }
+
+        /* Logo and Name container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the logo */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-right: 10px; /* Adds space between logo and name */
+        }
+
+        /* Styling for the name "Vishnu" */
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Navigation styling */
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em; /* Increased font size for navigation links */
+        }
+
+        header nav ul li {
+            display: inline-block; /* Makes the boxes around the links */
+        }
+
+        header nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px; /* Adds padding inside the box */
+            background-color: #fff; /* White box around the text */
+            border-radius: 5px; /* Rounds the corners of the box */
+            font-size: 1.0em; /* Adjusted size of navigation text */
+            display: inline-block; 
+           /* Ensures the box only surrounds the text */
+        }
+
+        /* Hover effect for navigation links */
+        header nav ul li a:hover {
+            background-color: #f2f2f2;
+             text-decoration: underline;/* Changes box color when hovering */
+        }
+
+        /* Sub-header styling */
+        .sub-header {
+            background-color: #f2f2f2;
+            color: #003366;
+            padding: 1em;
+            display: flex;
+            justify-content: space-around; /* Distributes space equally */
+        }
+
+        /* Styling for each link box in the sub-header */
+        .sub-header .box {
+            background-color: #003366;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-align: center;
+            
+        }
+
+        .sub-header .box a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .sub-header .box a:hover {
+            text-decoration: underline;
+        }
+
+        /* College name styling */
+        .college-name {
+            text-align: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #003366;
+            padding: 0.5em 1em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+            margin-top: 0;
+        }
+
+        /* Full-size image below college name */
+        .full-size-image img {
+            width: 100%; /* Makes the image take up full width */
+            height: auto; /* Maintains aspect ratio */
+            display: block; /* Removes any space below the image */
+        }
+           footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 0.05em 0; /* Further reduced padding */
+    margin-top: 0; /* Removed margin */
+    font-size: 0.8em; /* Smaller font size for compactness */
+    line-height: 0.5; /* Tighter line spacing */
+}
+    </style>
+</head>
+<body>
+
+    <!-- Main Header with Navigation Links and Logo -->
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="College Logo" class="logo"><!-- Logo -->
+            <span class="name">Divya Sri College Of Arts & Science</span> <!-- Name added after the logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="adminlog.html">Admin</a></li>
+                <li><a href="stafflog.html">Staff</a></li>
+                <li><a href="studentlog.html">Student</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sub-header with Admin, Staff, Student links -->
+    <div class="sub-header">
+        <div class="box">
+            <a href="index.html">Home</a>
+        </div>
+        <div class="box">
+            <a href="about.html">About Us</a>
+        </div>
+        <div class="box">
+            <a href="programs.html">Programs</a>
+        </div>
+        <div class="box">
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="box">
+            <a href="DisplayData">Announcements</a>
+        </div>
+    </div>
+
+    <!-- College Name Section -->
+    <section class="college-name">
+        <h1>Divya Sri College Of Arts & Science</h1>
+    </section>
+
+    <!-- Full-size image section -->
+    <div class="full-size-image">
+        <img src="images/campus.jpg" alt="College Campus"> <!-- Replace with your image path -->
+    </div>
+<footer>
+    <p>&copy; 2024 Divya Sri College Of Arts & Science. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
+
+

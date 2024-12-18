@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cinzel', serif; /* Applied Cinzel font style to all text */
+            margin: 0;
+            padding: 0;
+            background-image: url('images/bg.png'); /* Replace with your image path */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed while scrolling */
+            background-position: center;
+            height: 100vh; /* Ensures the body takes the full viewport height */
+        }
+
+        /* Main Header styling */
+        header {
+            background-color: #003366;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between; /* Ensures logo and name on the left, navigation on the right */
+            align-items: center;
+        }
+
+        /* Logo and Name container */
+        .logo-container {
+            display: flex;
+            align-items: center;
+        }
+
+        /* Styling for the logo */
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 60%;
+            object-fit: cover;
+            margin-right: 10px; /* Adds space between logo and name */
+        }
+
+        /* Styling for the name "Vishnu" */
+        .name {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Navigation styling */
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 40px;
+            margin: 0;
+            padding: 0;
+            font-size: 1.2em; /* Increased font size for navigation links */
+        }
+
+        header nav ul li {
+            display: inline-block; /* Makes the boxes around the links */
+        }
+
+        header nav ul li a {
+            color: #003366;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px; /* Adds padding inside the box */
+            background-color: #fff; /* White box around the text */
+            border-radius: 5px; /* Rounds the corners of the box */
+            font-size: 1.0em; /* Adjusted size of navigation text */
+            display: inline-block; 
+           /* Ensures the box only surrounds the text */
+        }
+
+        /* Hover effect for navigation links */
+        header nav ul li a:hover {
+            background-color: #f2f2f2;
+             text-decoration: underline;/* Changes box color when hovering */
+        }
+        
+        /* Section Styling */
+        #about {
+            background-image: url('images/about-bg.jpg'); /* Add background image for the About section */
+            background-size: cover; /* Ensure the image covers the section */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-position: center; /* Centers the background image */
+            padding: 3em 1em;
+            text-align: center;
+            color: #fff;
+        }
+
+        #about .logo {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 0%; /* Removes the circular shape and makes it square */
+            margin: 0 auto;
+        }
+
+        #about h2 {
+            font-size: 2.5em;
+            color:#003366;
+            margin: 1em 0;
+        }
+
+        .contact-info {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .contact-info h2 {
+            font-size: 2em;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        /* Background Image for Contact Section */
+        .contact-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 2em;
+            background-image: url('images/bg.jpg'); /* Add background image here */
+            background-size: cover; /* Ensures the background image covers the section */
+            background-repeat: no-repeat;
+            background-position: center;
+            border-radius: 10px;
+        }
+
+        .location-map {
+            width: 45%;
+        }
+
+        .form-container {
+            width: 45%;
+        }
+
+        .location-map iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+        }
+
+        .form-container h2 {
+            font-size: 2em;
+            color: #003366;
+            margin-bottom: 1em;
+        }
+
+        .form-container p {
+            font-size: 1.2em;
+            margin-bottom: 2em;
+        }
+
+        .form-container form {
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+        }
+
+        .form-container label {
+            font-size: 1.1em;
+            color: #333;
+        }
+
+        .form-container input, .form-container textarea {
+            padding: 0.8em;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .form-container button {
+            padding: 1em;
+            background-color: #003366;
+            color: white;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .form-container button:hover {
+            background-color: #005599;
+        }
+
+        footer {
+            background-color: #003366;
+            color: #fff;
+            text-align: center;
+            padding: 0.05em 0; /* Further reduced padding */
+            margin-top: 0; /* Removed margin */
+            font-size: 0.8em; /* Smaller font size for compactness */
+            line-height: 0.5; /* Tighter line spacing */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.jpg" alt="College Logo" class="logo"><!-- Logo -->
+            <span class="name">Divya Sri College Of Arts & Science</span> <!-- Name added after the logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <h2>Contact Us<br> Divya Sri College Of Arts & Science</h2>
+    </section>
+
+    <div class="contact-container">
+        <!-- Left side: Location and Map -->
+        <div class="location-map">
+            <h2>Our Location</h2>
+            <p>123 Main Street, Chennai, India</p>
+            <p>Phone: +91 123 456 7890</p>
+            <p>Email: contact@divyasri.edu.in</p>
+            <h2>Our Location on Google Maps</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.0134715572156!2d80.2193408!3d13.0449408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5270cf13d2ecb1%3A0x56f4676b74801e6b!2sDivya%20Sri%20College%20of%20Arts%20and%20Science!5e0!3m2!1sen!2sin!4v1697626747240!5m2!1sen!2sin"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        </div>
+
+        <!-- Right side: Contact Form -->
+        <div class="form-container">
+            <h2>We’d Love to Hear from You!</h2>
+            <p>Feel free to get in touch with us for any inquiries or feedback.</p>
+
+            <form id="contact-form" action="#" method="POST">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit" onclick="sendEmail()">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Divya Sri College of Arts & Science</p>
+    </footer>
+
+    <script>
+        emailjs.init("user_3QEvKqPdcT2KexvzpOr4A");
+
+        function sendEmail() {
+            event.preventDefault(); // Prevent form submission
+            var form = document.getElementById("contact-form");
+            var name = form.name.value;
+            var email = form.email.value;
+            var message = form.message.value;
+
+            emailjs.sendForm("service_7fwgxph", "template_0ctdj6p", form).then(
+                function(response) {
+                    alert("Message sent successfully!");
+                },
+                function(error) {
+                    alert("Error sending message: " + error.text);
+                }
+            );
+        }
+    </script>
+</body>
+</html>
